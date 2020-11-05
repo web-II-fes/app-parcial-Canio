@@ -1,0 +1,38 @@
+<!--<div id="bg">-->
+    <h1>crear Pedido</h1>
+
+    <div class="datosPedido">
+                
+        <form [formGroup]='pedidoForm' (ngSubmit)=submit()>
+
+            <div id="margenes">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                        <input matInput type="text" formControlName="nombreCliente" class="textBox">          
+                </mat-form-field>
+                
+                <mat-form-field appearance="fill">
+                    <mat-label >Direccion</mat-label>
+                        <input matInput type="text" formControlName="direccion" class="textBox">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Pedido</mat-label>
+                    <input matInput type="int" formControlName="pedido" class="textBox">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Fecha de Entrega</mat-label>
+                    <input matInput type="date" formControlName="fechaEntrega" class="textBox">
+                </mat-form-field>
+
+           </div>
+
+            <div class="enviar">
+                <button mat-raised-button class="buttonform">Guardar</button>
+            </div>
+        </form>
+       
+    </div>
+<!--</div>-->
+
